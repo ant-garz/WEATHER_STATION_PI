@@ -182,8 +182,7 @@ def main():
     # Fact
     fact = facts.update(api_key_api_ninja)
     fact_obj = json.loads(fact) # loads in as arr on objects
-    fact_obj[0]["fact"].replace("," ,"\n")
-    fact_obj[0]["fact"].replace("." ,"\n")
+    # TODO: format
     display.draw_black.text((20, 375), fact_obj[0]["fact"], fill=0, font=font8)  # RANDOM FACT
 
 

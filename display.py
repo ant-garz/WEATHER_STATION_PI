@@ -21,12 +21,12 @@ else:
     project_font = "font/Open_Sans/OpenSans-SemiBold.ttf"
 
 
-font8 = ImageFont.truetype(project_font, 8)
-font12 = ImageFont.truetype(project_font, 12)
-font14 = ImageFont.truetype(project_font, 14)
-font16 = ImageFont.truetype(project_font, 16)
-font24 = ImageFont.truetype(project_font, 24)
-font48 = ImageFont.truetype(project_font, 48)
+font8 = ImageFont.load_default()
+font12 = ImageFont.load_default()
+font14 = ImageFont.load_default()
+font16 = ImageFont.load_default()
+font24 = ImageFont.load_default()
+font48 = ImageFont.load_default()
 
 
 class Display:

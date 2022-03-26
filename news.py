@@ -9,7 +9,7 @@ class News:
 
     def update(self, api_id):
         self.news_list = requests.get(
-            f"https://newsapi.org/v2/top-headlines?sources=google-news-fr&apiKey={api_id}").json()
+            f"https://newsapi.org/v2/top-headlines?country=us&language=en&apiKey={api_id}").json()
         return self.news_list
 
     def selected_title(self):
@@ -20,5 +20,5 @@ class News:
                 line = textwrap.wrap(line, width=30)
                 list_news.append(line)
         else:
-            list_news = ["Problème de chargement des news"]
+            list_news = ["problem loading the news"]
         return list_news

@@ -182,11 +182,11 @@ def main():
     # Fact
     fact = facts.update(api_key_api_ninja)
     fact_obj = json.loads(fact) # loads in as arr on objects
-    # TODO: format
-    display.draw_black.text((20, 375), fact_obj[0]["fact"], fill=0, font=font8)  # RANDOM FACT
+    display.draw_black.text((20, 355), "RANDOM FACT GENERATOR: ", fill=0, font=font8)  # RANDOM FACT
+    display.draw_black.text((20, 375), textwrap.fill(fact_obj[0]["fact"], 40), fill=0, font=font8)  # RANDOM FACT
 
 
-    display.draw_black.text((300, 355), "temperature graph", fill=0, font=font14)  # +96H RAIN PROBABILITY
+    display.draw_black.text((300, 355), "TEMPERATURE GRAPH", fill=0, font=font14)  # +96H RAIN PROBABILITY
     # TEMPERATURE
     display.draw_black.line((430, mini, 430, maxi + 20), fill=0, width=1)  # GRAPH AXIS
     display.draw_black.text((410, mini), str(max(temperature)), fill=0, font=font12)  # MAX AXIS GRAPH LABEL

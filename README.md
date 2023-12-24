@@ -1,5 +1,5 @@
 # WEATHER_STATION_PI
-A simple weater station
+A simple weather station
 
 
 This fork is a repo for documentation on following along this tutorial https://www.hackster.io/aerodynamics/weather-and-news-station-e-paper-and-raspberry-pi-a19fa3
